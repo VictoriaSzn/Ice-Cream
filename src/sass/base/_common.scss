@@ -1,0 +1,86 @@
+@media screen and (min-width: 1200px) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+body {
+  font-family: var(--primary-font);
+  font-size: var(--primary-font-size);
+  font-weight: var(--primary-font-weight);
+  font-style: normal;
+  color: var(--primary-color);
+  letter-spacing: 0.04em;
+  background-image: url(../images/body/background-img-mobile.jpg);
+  background-repeat: repeat;
+  background-size: cover;
+  background-attachment: fixed;
+
+  &.locked {
+    overflow: hidden;
+  }
+}
+
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  body {
+    background-image: url(../images/body/background-img-mobile@2x.jpg);
+  }
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    background-image: url(../images/body/background-img-tablet.jpg);
+  }
+
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    body {
+      background-image: url(../images/body/background-img-tablet@2x.jpg);
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  body {
+    background-image: url(../images/body/background-img-desktop.jpg);
+  }
+
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    body {
+      background-image: url(../images/body/background-img-desktop@2x.jpg);
+    }
+  }
+}
